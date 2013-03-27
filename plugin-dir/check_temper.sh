@@ -65,7 +65,7 @@ print_usage(){
 # function print_help()
 print_help(){
   echo ""
-  echo "TEMPer temperature plugin for Icinga/Nagios version $version"
+  echo "TEMPer temperature plugin for Icinga/Nagios version ${VERSION}"
   echo "(c)2013 - Rene Koch <r.koch@ovido.at>"
   echo ""
   echo ""
