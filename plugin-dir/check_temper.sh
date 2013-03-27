@@ -29,11 +29,11 @@
 # Changelog:
 # * 1.3.0 - Wed Mar 27 2013 - Rene Koch <r.koch@ovido.at>
 # - First public release under GPL
-# * 1.2.0 - Tue Jun 28 2012 - Rene Koch <r.koch@ovido.at>
+# * 1.2.0 - Thu Jun 28 2012 - Rene Koch <r.koch@ovido.at>
 # - Changed warning and critical values to range
-# * 1.1.0 - Thu May 29 2012 - Rene Koch <r.koch@ovido.at>
+# * 1.1.0 - Tue May 29 2012 - Rene Koch <r.koch@ovido.at>
 # - Added humidity check
-# * 1.0.0 - Mon May 29 2012 - Rene Koch <r.koch@ovido.at>
+# * 1.0.0 - Tue May 29 2012 - Rene Koch <r.koch@ovido.at>
 # - This is the first release of new plugin check_temper
 
 # Configuration
