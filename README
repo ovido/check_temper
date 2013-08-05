@@ -17,7 +17,6 @@ Contributions / Help
 Send email to r.koch@ovido.at if you have questions regarding use
 of this software. Please include the following information in your email:
 * OS type and version
-* Perl version
 
 To submit patches of suggest improvements, send email to r.koch@ovido.at.
 
@@ -32,15 +31,10 @@ $ ./configure
 $ make all
 # make install
 
-This will install check_io to /usr/local/nagios/libexec and the PNP template
-to /usr/local/pnp4nagios/share/templates.
+This will install check_io to /usr/local/nagios/libexec.
 
 To change these paths use the following options:
 --prefix=<path_to_nagios_plugins>
---with-pnp-dir=<path_to_pnp_share_folder>
-
-If you don't use PNP you can disable installing the PNP template with:
---disable-pnp-template
 
 To change the user and group ownership of these files use:
 --with-nagios-user=<user>
@@ -61,7 +55,7 @@ Documentation
 Short documentation on how to use this plugin.
 
 Detailed documentation can be found on the project website
-https://labs.ovido.at/monitoring/wiki/check_temper.
+https://github.com/ovido/check_temper/wiki.
 
 The following checks can be performed by this plugin:
 
