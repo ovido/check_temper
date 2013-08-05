@@ -19,8 +19,7 @@ with TEMPer humi thermometers.
 %build
 %configure --prefix=%{_libdir}/nagios/plugins \
 	   --with-nagios-user=nagios \
-	   --with-nagios-group=nagios \
-	   --disable-pnp-template
+	   --with-nagios-group=nagios
 
 make all
 
