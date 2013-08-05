@@ -13,7 +13,6 @@
 
 # directories
 SRC_PLUGIN=@srcdir@/plugin-dir
-SRC_CONTRIB=@srcdir@/contrib
 
 PACKAGE=@PACKAGE@
 VERSION=@VERSION@
@@ -21,8 +20,7 @@ VERSION=@VERSION@
 distdir=$(PACKAGE)-$(VERSION)
 DIST_COMMON=config.sub configure.in configure NEWS INSTALL missing aclocal.m4 install-sh Makefile.am ChangeLog COPYING README AUTHORS Makefile.in config.guess
 PLUGIN_COMMON=$(SRC_PLUGIN)/Makefile.am $(SRC_PLUGIN)/Makefile.in $(SRC_PLUGIN)/check_temper.sh
-CONTRIB_COMMON=$(SRC_CONTRIB)/Makefile.am $(SRC_CONTRIB)/Makefile.in $(SRC_CONTRIB)/check_temper.php
-DISTFILES=$(DIST_COMMON) $(PLUGIN_COMMON) $(CONTRIB_COMMON)
+DISTFILES=$(DIST_COMMON) $(PLUGIN_COMMON)
 
 # compiler settings
 prefix=@prefix@
@@ -32,15 +30,12 @@ INSTALL_OPTS=@INSTALL_OPTS@
 # Compile
 all:
 	cd $(SRC_PLUGIN) && $(MAKE) $@
-	cd $(SRC_CONTRIB) && $(MAKE) $@
 
 # Install
 install:
 	cd $(SRC_PLUGIN) && $(MAKE) $@
-	cd $(SRC_CONTRIB) && $(MAKE) $@
 
 # Cleanup
 clean:
 	cd $(SRC_PLUGIN) && $(MAKE) $@
-	cd $(SRC_CONTRIB) && $(MAKE) $@
 
